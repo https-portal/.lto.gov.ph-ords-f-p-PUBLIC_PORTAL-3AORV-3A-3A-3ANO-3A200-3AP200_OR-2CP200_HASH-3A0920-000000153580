@@ -1,0 +1,421 @@
+<!DOCTYPE html><html class="no-js  page-200 app-PUBLIC_PORTAL" lang="en-us"><head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>LTMS Official Receipt Validation</title>
+  <link rel="stylesheet" href="css/Core.min.css" type="text/css">
+<link rel="stylesheet" href="css/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui-apex.min.css" type="text/css">
+
+  <link rel="stylesheet" href="css/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="css/Core.min_1.css" type="text/css">
+
+  <style type="text/css">
+body {
+  background-image: url("images/bg_crossroads.jpg")!important;
+  background-attachment: fixed;
+}
+
+body .overlay { 
+  position: fixed;
+  background-color: rgba(0,54,175,.55);
+  width: 100%;
+  height: 100%;
+}
+
+/*footer
+.t-Footer-version {
+  line-height: 69px;
+  padding-left: 19px;
+  padding-top: 6.6px
+}
+
+.footer-mid-logo {
+  float:left;
+  width:150px;
+}
+
+.t-Body-contentInner {
+	  min-height: 92vh;
+}*/
+</style>
+
+  <link rel="stylesheet" href="css/38110691971776138.css" type="text/css">
+
+  <link rel="stylesheet" href="css/public_portal_min.css" type="text/css">
+<link rel="stylesheet" href="css/fixes.css" type="text/css">
+<link rel="stylesheet" href="css/websocket_server_min.css" type="text/css">
+<link rel="stylesheet" href="css/digital_id_min.css" type="text/css">
+
+  <style type="text/css">
+.create-border {
+  border: 1rem solid rgba(255,255,255,.3);
+  background-clip: content-box;
+}
+
+.or-verify-alert-header {
+  color: #0036af;
+  padding: 0 22px;
+  text-align: center; 
+}
+ 
+.or-verify-lto-logo {
+  max-width: 64px;
+  margin-right: 45px;
+}
+
+.t-Alert--success .or-verify-title {
+  color: #8ac43f;
+}
+
+.t-Alert--danger .or-verify-title {
+  color: #e10017;
+}
+</style>
+  
+  <link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" sizes="16x16" href="favicon.ico">
+<link rel="icon" sizes="32x32" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="64x64" href="favicon.ico">
+  
+
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions no-anim   apex-top-nav apex-icons-fontapex t-PageBody--noNav" id="t_PageBody">
+  <div id="public-advisory-container"></div>
+  <div class="overlay"></div>    
+<form action="wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="1200" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="200" id="pFlowStepId"><input type="hidden" name="p_instance" value="10797867161329" id="pInstance"><input type="hidden" name="p_page_submission_id" value="263183282158974491542221033834607902457" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="263183282158974491542221033834607902457" id="pSalt">
+<header class="t-Header" id="t_Header">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree" title="Expand / Collapse Navigation" id="t_Button_navControl" type="button"><span class="t-Icon fa fa-bars" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="f?p=1200:HOME::::::" class="t-Header-logo-link"><img src="images/lto_logo.png" style="float:left;"></a>
+    </div>
+    <div class="t-Header-navBar">
+      <ul class="t-NavigationBar " id="69964099393747305"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:void(window.open('https://lto.gov.ph/'));">
+    <span class="t-Icon fa fa-cloud"></span><span class="t-Button-label">LTO Official Webpage</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L69964099393747307" data-menu="menu_L69964099393747307">
+      <span class="t-Icon fa fa-graduation-cap"></span><span class="t-Button-label">E-Learning</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
+  </button><div class="t-NavigationBar-menu" style="display: none" id="menu_L69964099393747307"><ul><li data-current="false" data-icon="fa fa-question-circle-o"><a href="f?p=PUBLIC_PORTAL:ONLINE_VALIDATION_EXAM:10797867161329:::::">CDE Online Validation Exam</a></li><li data-current="false" data-icon="fa fa-book"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:ORC">Driver's License Renewal Course</a></li><li data-current="false" data-icon="fa fa-play-circle-o"><a href="f?p=PUBLIC_PORTAL:VIDEO_REGISTRATION:10797867161329:::::">LTO Client ID Tutorial</a></li><li data-current="false" data-icon="fa fa-user-graduate"><a href="f?p=ELEARNING:HOME:10797867161329:::1::">Driver's Manual</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A20AB72E0530D28780ACC4D">Licensing Information</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A21AB72E0530D28780ACC4D">Getting Ready to Drive</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A22AB72E0530D28780ACC4D">Driving Fundamentals</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A23AB72E0530D28780ACC4D">Road Courtesy and Safety</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A24AB72E0530D28780ACC4D">Rights, Duties and Responsibilities of Drivers</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A25AB72E0530D28780ACC4D">Motor Vehicle Registration</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A26AB72E0530D28780ACC4D">Land Transportation Related Laws</a></li><li data-current="false" data-icon="fa fa-caret-right"><a href="f?p=ELEARNING:HOME:10797867161329:::HOME:P1_ELEARN_TOPICS_FK:A9EDD4DC2A27AB72E0530D28780ACC4D">Fines and Penalties for Violations</a></li></ul></div></li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="f?p=PUBLIC_PORTAL:CONTACT_US:10797867161329:::::">
+    <span class="t-Icon fa fa-phone"></span><span class="t-Button-label">Contact</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="f?p=PUBLIC_PORTAL:TERMS_AND_CONDITIONS:10797867161329:::::">
+    <span class="t-Icon fa fa-user-plus"></span><span class="t-Button-label">Register</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="f?p=1200:LOGIN_DESKTOP:10797867161329:::9999::&amp;cs=356yPCrEHH2NmDZnXX60Qon8A64EM36mOo8HHZSffr0NTmtI7WW7bNY_mZTrZLtn_sQtgkWF0FkjTSAeWB1rsfQ">
+    <span class="t-Icon fa fa-user"></span><span class="t-Button-label">Login</span><span class="t-Button-badge"></span>
+  </a>
+</li></ul>
+    </div>
+  </div>
+</header>
+    <div class="t-Body">
+  <div class="t-Body-main">
+      <div class="t-Body-title" id="t_Body_title">
+        
+      </div>
+      <div class="t-Body-content" id="t_Body_content">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="29326048649789569_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="29326048649789569_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-contentInner">
+          <div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="R84675782609529815" class=""> 
+<input type="hidden" id="P0_CANCEL_TEXT" name="P0_CANCEL_TEXT" value="Do you really want to Cancel?<br>All entered data will be deleted permanently."><input type="hidden" data-for="P0_CANCEL_TEXT" value="YjYVk_pl0r_JY-Aftqc5_-0IZFZdSbCgu8Q_TNv0QThIzBOILovBMc3PwCdxYuBsuHBHxw2pWClTHo72ZYl4vA"><input type="hidden" id="P0_WSS_JSON" name="P0_WSS_JSON" value=""><input type="hidden" id="P0_WMT_D" name="P0_WMT_D" value=""><input type="hidden" data-for="P0_WMT_D" value="qvJeaKfdN2TW0oxpEN45GJ9luOwAMfFQs-qLrM13oBNhml9WnScPmLKrHZqnvvNNEqsWnjEvSNgYcrBX1RpXfw"><input type="hidden" id="P0_WMA_D" name="P0_WMA_D" value=""><input type="hidden" data-for="P0_WMA_D" value="UE_kLPwSmVzMvh2RjszqtqKFxPcTsAEXHzloggnbwH35KBQU9dld8aabVXtm4BEZpOru7wTXeT6tHJufZ1_sHg"><input type="hidden" id="P0_WMD_D" name="P0_WMD_D" value=""><input type="hidden" data-for="P0_WMD_D" value="VWD6SvSo71o0k-ZOExavlG_D2VxHlXcvEiYwpUriXCC8RpDS15w8R9hYywuQuL2GPCaZ6k3dkrNDpq_ODfsSfw"><input type="hidden" id="P0_WMR_D" name="P0_WMR_D" value=""><input type="hidden" data-for="P0_WMR_D" value="wCKZD-dkjs9C94kZMCDX-9yjkiz3R-Gv2OSVB5FyJKCabzjguGzGvVzUYMdn32pf9sH4zSNSB7gObwN92IW2xQ"><input type="hidden" id="P0_W_DLS_DONE" name="P0_W_DLS_DONE" value=""><input type="hidden" data-for="P0_W_DLS_DONE" value="kjYB7GqN1Wz9-M9j8uIMWlDGkuvtLbd-ILPmjhmq-cgBJZZFAEpcuW3fzNlObBUheQqsdDj7CBmqC7MNMujpiw"><input type="hidden" id="P0_W_RESC_APPO_DONE" name="P0_W_RESC_APPO_DONE" value=""><input type="hidden" data-for="P0_W_RESC_APPO_DONE" value="gtHlTSrP6qj4170RVplVTlZv4Rb6lLsqscpt5niuG1IFBE15yIdCFqrlMZDf-vK0LNJ9QrTL3nld3cK6q_bLYg"><script>
+  const logoutObj = {
+    reloadUrl4Idle : `${location.protocol}/${location.host}/ords/apex_authentication.logout?p_app_id=1200&p_session_id=10797867161329`
+  , reloadUrl4Life : `${location.protocol}/${location.host}/ords/apex_authentication.logout?p_app_id=1200&p_session_id=10797867161329`
+  };
+</script>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="R243985869771238207" class=""> 
+<input type="hidden" id="P200_HASH" name="P200_HASH" value="DB34B1601DA6A7203C7E713CA58A4278B5A6805E051E598FA29C083194B9303A"><input type="hidden" data-for="P200_HASH" value="JEPPzatvaBXz8S24m9ztGLzxRKlJO6rH8ZYcGifcCOak0JDh7lX3eAGdwvbPIG97BilgsXd6t0gyvqGgzzhSOQ"><input type="hidden" id="P200_SOURCE" name="P200_SOURCE" value=""><input type="hidden" data-for="P200_SOURCE" value="EvzS5b7R0Q1hDlyUrFwoh2BP8WlQCo7RMJpgQs5ZZcnRsz-5H0EZqcb_U7MCmi8O0KyUjnvc9fLDG-u9qdWskw"><input type="hidden" id="P200_IS_OR_CANCELLED" name="P200_IS_OR_CANCELLED" value="N"><input type="hidden" data-for="P200_IS_OR_CANCELLED" value="8I7gkWQgBPgF_8b7S6pShMUpY3E4-TPKwvhH3LPntevgQu6edIXTXymHsekgzntDmY0FqCEjJvWSbbsVcV5XZg"><input type="hidden" id="P200_IS_OR_VALID" name="P200_IS_OR_VALID" value="Y"><input type="hidden" data-for="P200_IS_OR_VALID" value="nped8U7FVe1XaxOLEYkpxeqmSbR2hnh7Yet5hxXfnap9ZJ5Nhjn4silgqXC8CXRE8_z24Et4s_HuT2sU4wtumg">
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Alert create-border  t-Alert--wizard t-Alert--defaultIcons t-Alert--success" id="R243677729125039039">
+  <div class="t-Alert-wrap">
+    <h3 class="or-verify-alert-header">
+      Land Transportation Management System
+    </h3>
+    <div class="t-Alert-icon">
+      <img class="or-verify-lto-logo" src="images/lto_logo.png">
+      <span class="t-Icon "></span>
+    </div>
+    <div class="t-Alert-content">
+      <div class="t-Alert-header">
+        <h2 class="t-Alert-title or-verify-title" id="R243677729125039039_heading">VERIFIED OFFICIAL RECEIPT</h2>
+      </div>
+      <div class="t-Alert-body"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--display-only " id="P200_OR_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_OR" id="P200_OR_LABEL" class="t-Form-label">Official Receipt Number</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_OR" id="P200_OR" value="0920-000000153580"><input type="hidden" data-for="P200_OR" value="ZH1BFyXdj-ewfWR2j2vTbzSGgHpBk-o56Hh4-3hXIhoDrjubPHRZbcgSSvdX5QN6lTJ2ttP7fy3QW6kX9v8Uhw"><span id="P200_OR_DISPLAY" class="display_only apex-item-display-only">0920-000000153580</span></div><span id="P200_OR_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--display-only " id="P200_TRX_NO_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_TRX_NO" id="P200_TRX_NO_LABEL" class="t-Form-label">Transaction Number</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_TRX_NO" id="P200_TRX_NO" value="TX-MVIRS-20230608-692090
+"><input type="hidden" data-for="P200_TRX_NO" value="j8-uUUkkx3PP91j90m3laLLO0AxoaBsv0s9XDX9vhqMOGAdoSY1lQJlJalwQTbt3AFAaPiNpsDp_sOwG24zd0A"><span id="P200_TRX_NO_DISPLAY" class="display_only apex-item-display-only">TX-MVIRS-20230608-692090</span></div><span id="P200_TRX_NO_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--display-only " id="P200_LTO_CLIENT_ID_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_LTO_CLIENT_ID" id="P200_LTO_CLIENT_ID_LABEL" class="t-Form-label">LTO Client ID</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_LTO_CLIENT_ID" id="P200_LTO_CLIENT_ID" value="22-960701-8881109"><input type="hidden" data-for="P200_LTO_CLIENT_ID" value="DUoOq295cT4v3xrAJK2L9NP0ZlCXe8B0dulyWWmHCOWRIhmGJQzTQQget4XiFb9ptZWmYfJRMTMtzk3UHIdHSw"><span id="P200_LTO_CLIENT_ID_DISPLAY" class="display_only apex-item-display-only">22-960701-8881109</span></div><span id="P200_LTO_CLIENT_ID_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--text-field " id="P200_OR_DATE_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_OR_DATE" id="P200_OR_DATE_LABEL" class="t-Form-label">Official Receipt Date</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_OR_DATE" id="P200_OR_DATE" value="06/09/2023"><input type="hidden" data-for="P200_OR_DATE" value="Fibx-9TFfXi6CUxujkm999KtByIdKqze2DRk6FOSwmpPEzyHgW9goncVqXpK3B91lGjWyeKkwn-M0ZxstI1YDQ"><span id="P200_OR_DATE_DISPLAY" class="display_only apex-item-display-only">06/26/2023</span></div><span id="P200_OR_DATE_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--display-only " id="P200_MV_FILE_NUMBER_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_MV_FILE_NUMBER" id="P200_MV_FILE_NUMBER_LABEL" class="t-Form-label">Motor Vehicle File Number</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_MV_FILE_NUMBER" id="P200_MV_FILE_NUMBER" value="MVIRS-RN-20230608-996285"><input type="hidden" data-for="P200_MV_FILE_NUMBER" value="huLO7vJ5RGGSVRX92JqtywK_z2muZctdqC8KaLmEuZqfCR1m9v3NTrv4ZCNBtk597lhMGaxKWMg1WNbNAUz86g"><span id="P200_MV_FILE_NUMBER_DISPLAY" class="display_only apex-item-display-only">MVIRS-RN-20230608-996285</span></div><span id="P200_MV_FILE_NUMBER_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel  apex-item-wrapper apex-item-wrapper--display-only " id="P200_PLATE_NO_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P200_PLATE_NO" id="P200_PLATE_NO_LABEL" class="t-Form-label">Plate Number</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="hidden" name="P200_PLATE_NO" id="P200_PLATE_NO" value="JDF-966"><input type="hidden" data-for="P200_PLATE_NO" value="V8iq-oBhSIYXDLzdvChFhmSZrVR9OcZDYdApCNVKNmAhF6jG5xECIyWwjUFnH3YIjR0-9ZHCDOaRGQWwVXCVUA"><span id="P200_PLATE_NO_DISPLAY" class="display_only apex-item-display-only">JDF-966</span></div><span id="P200_PLATE_NO_error_placeholder" class="a-Form-error" data-template-id="32741212825544481_ET"></span></div></div>
+</div>
+</div>
+</div></div>
+    </div>
+    <div class="t-Alert-buttons"></div>
+  </div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="reg-digital-id_parent">
+<div id="reg-digital-id" class="t-DialogRegion js-modal js-dialog-size720x480 js-regionDialog" style="display:none" title="Digital ID ">
+  <div class="t-DialogRegion-wrap">
+    <div class="t-DialogRegion-bodyWrapperOut"><div class="t-DialogRegion-bodyWrapperIn"><div class="t-DialogRegion-body"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="reg-digital-id-picture" class=""> 
+<div class="qr-box">
+  <div id="qrcode">
+  </div>
+</div>
+
+<div class="wait-box">
+  <span class="u-Processing custom-spinner" role="alert">
+     <span class="u-Processing-spinner"></span>
+     <div class="spinner-wait-text">LOADING DIGITAL ID</div>
+  </span>
+</div>
+
+<div class="scene license-container">
+  <div class="card">
+    <div class="card__face card__face--front">
+      <canvas id="canvas-front"></canvas>
+    </div>
+    <div class="card__face card__face--back">
+      <canvas id="canvas-back"></canvas>
+    </div>
+  </div>
+</div><table summary="" cellspacing="0" cellpadding="0" border="0" width="100%"><tbody><tr><td align="right"><button class="t-Button t-Button--noLabel t-Button--icon t-Button--link" onclick="void(0);" type="button" id="btn-close-digital-id-ls" title="Close" aria-label="Close"><span class="t-Icon fa fa-times-circle-o fa-2x" aria-hidden="true"></span></button><button class="t-Button t-Button--noLabel t-Button--icon t-Button--link" onclick="void(0);" type="button" id="btn-flip-digital-id-ls" title="Show Backside" aria-label="Show Backside"><span class="t-Icon fa fa-exchange fa-2x" aria-hidden="true"></span></button><button class="t-Button t-Button--noLabel t-Button--icon t-Button--link" onclick="void(0);" type="button" id="btn-qr-digital-id-ls" title="Close" aria-label="Close"><span class="t-Icon fa fa-qrcode fa-2x" aria-hidden="true"></span></button><button class="t-Button t-Button--noLabel t-Button--icon t-Button--link" onclick="void(0);" type="button" id="btn-back-digital-id-ls" title="Close" aria-label="Close"><span class="t-Icon fa fa-chevron-left fa-2x" aria-hidden="true"></span></button></td></tr></tbody></table>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="reg-digital-id-list" class=""> 
+<ul class="t-Cards u-colors t-Cards--featured t-Cards--block force-fa-lg t-Cards--displayIcons t-Cards--float t-Cards--desc-2ln t-Cards--animColorFill"></ul>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div class="t-Alert t-Alert--colorBG t-Alert--horizontal t-Alert--defaultIcons t-Alert--info" id="reg-digital-id-error">
+  <div class="t-Alert-wrap">
+    <div class="t-Alert-icon">
+      <span class="t-Icon "></span>
+    </div>
+    <div class="t-Alert-content">
+      <div class="t-Alert-header">
+        <h2 class="t-Alert-title" id="reg-digital-id-error_heading">Digital ID can not be generated</h2>
+      </div>
+      <div class="t-Alert-body"><div class="error-reason">
+</div></div>
+    </div>
+    <div class="t-Alert-buttons"></div>
+  </div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+    <div class="t-DialogRegion-buttons">
+       <div class="t-ButtonRegion t-ButtonRegion--dialogRegion">
+         <div class="t-ButtonRegion-wrap">
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"><button class="t-Button t-Button--noLabel t-Button--icon " onclick="void(0);" type="button" id="btn-back-digital-id" title="Back" aria-label="Back"><span class="t-Icon fa fa-chevron-left" aria-hidden="true"></span></button><button onclick="void(0);" class="t-Button t-Button--danger" type="button" id="btn-close-digital-id"><span class="t-Button-label">Close</span></button></div></div>
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--hot" onclick="void(0);" type="button" id="btn-flip-digital-id"><span class="t-Icon t-Icon--left fa fa-exchange" aria-hidden="true"></span><span class="t-Button-label">Show Backside</span><span class="t-Icon t-Icon--right fa fa-exchange" aria-hidden="true"></span></button><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--hot" onclick="void(0);" type="button" id="btn-qr-digital-id"><span class="t-Icon t-Icon--left fa fa-qrcode" aria-hidden="true"></span><span class="t-Button-label">QR Code</span><span class="t-Icon t-Icon--right fa fa-qrcode" aria-hidden="true"></span></button></div></div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto">
+<div id="reg-print-document_parent">
+<div id="reg-print-document" class="t-DialogRegion js-modal js-dialog-size720x480 js-regionDialog" style="display:none" title="Print Document">
+  <div class="t-DialogRegion-wrap">
+    <div class="t-DialogRegion-bodyWrapperOut"><div class="t-DialogRegion-bodyWrapperIn"><div class="t-DialogRegion-body"><input type="hidden" id="P0_DOC_LINK" name="P0_DOC_LINK" value=""><object data="" type="" style="">
+  <h1 style="text-align:center;font-size: 4vw;">You browser cannot view this document.<br>
+    <a href="" download="">Download</a> it.
+  </h1>
+</object></div></div></div>
+    <div class="t-DialogRegion-buttons">
+       <div class="t-ButtonRegion t-ButtonRegion--dialogRegion">
+         <div class="t-ButtonRegion-wrap">
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"></div></div>
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"></div></div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        <div class="mid-logo-container">
+          <img src="images/lto_mid_logo_white_small.png">;
+        </div>
+        </div>
+        <footer class="t-Footer">
+          <div class="t-Footer-body">
+            <div class="t-Footer-content"></div>
+            <div class="t-Footer-apex">
+              <div class="t-Footer-version"><span class="fa fa-package" aria-hidden="true"></span> Release 2.5.4</div>
+              <div class="walk-in-terminal"></div>
+              <div class="page-visits"><span class="fa fa-user" aria-hidden="true"></span>      444,693,815 page visits</div>
+              <div class="t-Footer-customize"></div>
+              
+            </div>
+          </div>
+          <div class="t-Footer-top">
+            <a href="#top" class="t-Footer-topButton" id="t_Footer_topButton"><span class="a-Icon icon-up-chevron"></span></a>
+          </div>
+        </footer>
+      </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs">
+  
+</div><input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="OwT3U_szPxgr6FhGpZ-QlUzRUs9OekLpQ3bM7uIsfivzLovIndN_PoRXhPUpjePm6lcx5VvN_jLU-AmdTgbFwaUBHSduyreZq2GDlJgkCbwO5yhYOnRKmMCZzMphdhGrz-nX4OQZ7frqPTwxuPd1u_BF3ks3PVwtd3qNxizOJgafQAmM6iqRUeDH2QXE8ZdH0M7NvT6LfVBv4ROWRzdebdfY0oannpzC7vKIsNMMQlPhrsOHHU8WaXOuPaAXy9mmWO5PyNl-tIXfAvJh0kgZofACTMfudC08-VnoaFAfw7LQ8SRCL2ieHgPKdr4awwkl"></form>
+
+
+<script>
+var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;
+</script>
+<script src="js/desktop_all.min.js"></script>
+<script src="wwv_flow.js_messages"></script>
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"bindEventType":"ready","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ dermalog.dl_a_public_portal.websocketServer.register(
+  false,  //forceUpdate
+  false,   //showWSSIconAlways
+  true,   //showTypeText, 
+  true,   //showIssueText, 
+  true,   //showOfficeNameText
+);
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"bindEventType":"ready","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ // set session timeout to logout url
+//dermalog.dl_common.sessionTimeoutObserver.Init(true, {});
+
+// set session timeout to logout url
+dermalog.dl_common.sessionTimeoutObserver.Init(true, logoutObj);
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"bindEventType":"ready","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ dermalog.dl_a_public_portal.digital_id.initDigitlIdModal(``);
+},"action":"NATIVE_JAVASCRIPT_CODE"}]}];
+}
+</script>
+
+<script src="js/widget.stickyWidget.min.js"></script>
+<script src="js/theme42.min.js"></script>
+
+
+<script src="js/browser_detect.js"></script>
+<script src="js/add_icon.js"></script>
+<script src="js/namespaces.js"></script>
+<script src="js/namespaces_1.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/namespaces_2.js"></script>
+<script src="js/apps.js"></script>
+<script src="js/namespace.js"></script>
+<script src="js/namespace_1.js"></script>
+<script src="js/page_min.js"></script>
+<script src="js/messages_min.js"></script>
+<script src="js/websocket_server_min.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script src="js/digital_id_min.js"></script>
+<script src="js/documents_min.js"></script>
+<script src="js/namespace_2.js"></script>
+<script src="js/dms_min.js"></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+apex.jQuery( function() {
+apex.page.init( this, function() {
+apex.jQuery.when.apply( apex.jQuery, apex.page.loadingDeferreds ).done(function() {
+try {
+(function(){apex.da.initDaEventList();})();
+(function(){apex.da.init();})();
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+}
+});
+});
+});</script>
+
+
+
+</body></html>
